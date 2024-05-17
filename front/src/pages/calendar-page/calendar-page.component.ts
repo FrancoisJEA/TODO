@@ -1,4 +1,7 @@
+import { NgModule } from '@angular/core';
+import { CalendarComponent } from './../../components/calendar/calendar.component';
 import { Component } from '@angular/core';
+
 
 @Component({
   selector: 'app-calendar-page',
