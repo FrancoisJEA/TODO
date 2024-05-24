@@ -1,3 +1,4 @@
+import { bootstrapApplication } from '@angular/platform-browser';
 // import { Component } from '@angular/core';
 
 // @Component({
@@ -14,7 +15,7 @@
 import {Component} from '@angular/core';
 
 import {MatGridListModule} from '@angular/material/grid-list';
-
+import {NgbConfig} from '@ng-bootstrap/ng-bootstrap';
 /**
  * @title Basic grid-list
  */

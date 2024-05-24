@@ -1,0 +1,25 @@
+.navbar-nav {
+
+  padding: 0;
+  display: flex;
+
+}
+
+/* .nav nav-tabs{} */
+nav{
+  width: 100%;
+  display: flex;
+  padding: 10px;
+
+}
+
+.navbar-light{background-color: #000;}
+form{
+  text-align: right;
+  display :flex
+}
+
+/* .btn{
+  position: absolute;
+  border: 100px;
+} */
