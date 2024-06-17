@@ -1,19 +1,19 @@
 import { DatePipe } from '@angular/common';
 
-export interface Tasks{
+interface Tasks{
   Name:string;
   Description:string;
-  ExpirationDate:DatePipe;
+  ExpirationDate:Date;
   color?: string;
 }
 
-class task implements Tasks {
+export class task implements Tasks {
 
 //#region var declaration
   private _name:string ="";
-  private _description = "";
+  private _description:string = "";
   private _color:string ="";
-  private _expirationDate: DatePipe = new DatePipe('Paris');
+  private _expirationDate: Date = new Date('');
   private _bar: boolean = false;
 //#endregion
 
@@ -24,11 +24,11 @@ class task implements Tasks {
   set Description(value: string) {this._description = value;}
   get Color(): string { return this._color;}
   set Color(value: string) {this._color = value;}
-  get ExpirationDate(): DatePipe { return this._expirationDate;}
-  set ExpirationDate(value: DatePipe) {this._expirationDate = value;}
+  get ExpirationDate(): Date { return this._expirationDate;}
+  set ExpirationDate(value: Date) {this._expirationDate = value;}
 //#endregion
 
-  constructor(nom: string, description: string,expirationDate:DatePipe , color?: string) {
+  constructor(nom: string, description: string,expirationDate:Date , color?: string) {
       this.Name = nom;
       this.Description = description;
       this.ExpirationDate = expirationDate;
